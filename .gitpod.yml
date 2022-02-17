@@ -1,0 +1,15 @@
+github:
+  prebuilds:
+    master: true
+    branches: true
+    pullRequests: true
+    pullRequestsFromForks: true
+    addCheck: false
+    addComment: false
+    addBadge: true
+ports:
+  - port: 5341
+    onOpen: open-browser
+tasks:
+  - before: ./pull.sh
+    command: ./run.sh
